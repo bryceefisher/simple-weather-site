@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Eugene Weather</title>
+</head>
+
+<body style="padding: 5px;">
+    <h3 style="text-align: center;">Fill out the form below for current weather data in your city:</h3>
+    <form action="/" method="post">
+        <label for="cityInput" class="col-sm-2 col-form-label col-form-label-lg">City Name</label>
+        <input id="cityInput" placeholder="City Name" type="text" name="cityInput" class="form-control"
+            aria-label="Large" aria-describedby="inputGroup-sizing-sm"></input>
+        <br>
+        <label for="unitInput" class="col-sm-2 col-form-label col-form-label-lg">Temperature Units</label>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Options</label>
+            </div>
+            <select class="custom-select" id="unitInput">
+              <option selected>Choose...</option>
+              <option value="1">Imperial</option>
+              <option value="2">Standard</option>
+              <option value="3">Metric</option>
+            </select>
+          </div>
+        </br>
+        <button class="btn btn-primary" type="submit">Go</button>
+    </form>
+</body>
+
+</html>
